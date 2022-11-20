@@ -5,7 +5,9 @@
 ### Usage
 ``python main.py <test_file>``
 #### e.g. ``python main test1.txt``
-
+### Test cases
+test1.txt and test2.txt has errors and will print out the errors.
+test3.txt and test4.txt has no error and will print the whole structure
 ### Rules for the test file
 1. The test file can be empty
 2. if the file is not empty, it must starts with ``void main()`` and end with ``end``, eg ``void main '(' ')' <stmt>* end``

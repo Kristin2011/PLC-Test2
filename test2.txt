@@ -1,0 +1,12 @@
+void main()
+int_one  cccccc;
+int_one aaaaaa;
+int_two bbbbbb32;
+aaaaaa=(3-4a))*5+bbbbbb;
+if(3=4){
+aaaaa=(5*(4+3);
+}
+while(3<5){
+ccccc=cccccc-4=;
+}
+end

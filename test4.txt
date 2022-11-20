@@ -1,0 +1,25 @@
+void main()
+int_one aaaaaaa;
+int_one bbbbbbb;
+int_two cccccc;
+aaaaaa=(3-4)*5+bbbbbb;
+if_satisfied(3<4){
+	aaaaaa=5*(4+3);
+	if_satisfied(3<4){
+		aaaaaa=5*(4+3);
+	}
+	when(aaaaaa<45){
+		aaaaaa=aaaaaa+1;
+	}
+}
+when(aaaaaa<45){
+if_satisfied(3<4){
+		aaaaaa=5*(4+3);
+	}
+	when(aaaaaa<45){
+		aaaaaa=aaaaaa+1;
+	}
+}
+aaaaaa=aaaaaa+1;
+
+end

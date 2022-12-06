@@ -6,7 +6,6 @@ identifiers = '[_a-zA-Z][_a-zA-Z]*'
 
 integers = '[0-9][0-9]*'
 
-
 operations={'=':'ASSIGN',
             '+':'ADD',
             '-':'SUB',
@@ -39,7 +38,7 @@ keywords = {'int_one':'INT1',
 delimiter=';'
 parser_array=[]
 
-parser = argparse.ArgumentParser(description='A test program.')
+parser = argparse.ArgumentParser(description='Test program.')
 parser.add_argument("file", help="Prints the supplied argument.")
 args = parser.parse_args()
 
@@ -334,29 +333,30 @@ def program():
         print('</Program>')
         return
     if next_token[1]!=keywords['void']:
-        print('Error: Code must begin with:void main()')
+        print('Error: Code must begin with: void main()')
         sys.exit()
 
     next_token=get_next_token()
     if next_token is None or next_token[1]!=keywords['main']:
-        print('Error: Code must begin with:void main()')
+        print('Error: Code must begin with: void main()')
         sys.exit()
 
     next_token = get_next_token()
     if next_token is None or next_token[1] != operations['(']:
-        print('Error: Code must begin with:void main()')
+        print('Error: Code must begin with: void main()')
         sys.exit()
 
     next_token = get_next_token()
     if next_token is None or next_token[1] != operations[')']:
-        print('Error: Code must begin with:void main()')
+        print('Error: Code must begin with: void main()')
         sys.exit()
 
     while len(parser_array)>1:
         stmt(4)
     next_token = get_next_token()
     if next_token is None or next_token[1] != keywords['end']:
-        print('Error: Code must end with:end')
+        print('Error: Code must end with: end')
         sys.exit()
     print('</Program>')
+
 program()
